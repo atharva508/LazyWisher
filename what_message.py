@@ -1,3 +1,4 @@
+#This file handles the process of sending the message to whatsapp using the groupID/phoneNo. and the generated message
 import pywhatkit
 from datetime import datetime
 def send_wish(grp_id,message):
