@@ -1,5 +1,7 @@
+#This module generates a wish for the event and adds a random assortment of emojis
 import emoji
 import random
+#Takes in a WishingDate object as a parameter and generates a wish
 def getWish(event_details):
     wish = "Happy "
     wish+= event_details.event
@@ -10,17 +12,9 @@ def getWish(event_details):
     wish+=randomEmojis()
     return wish
 
+# selects 2 emojis out of a list of 7 emojis appropriate for birthdays and anniversaries
 def randomEmojis():
     emojiList = []
-    '''
-    emojiList.append(emoji.emojize(":smiling_face_with_heart-eyes:"))
-    emojiList.append(emoji.emojize(":partying_face:"))
-    emojiList.append(emoji.emojize(":red_heart:"))
-    emojiList.append(emoji.emojize(":yellow_heart:"))
-    emojiList.append(emoji.emojize(":rose:"))
-    emojiList.append(emoji.emojize(":confetti_ball:"))
-    emojiList.append(emoji.emojize(":party_popper:"))
-    '''
     emojiList.append("\U0001F618")
     emojiList.append("\U0001F973")
     emojiList.append("\U00002764")
