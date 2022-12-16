@@ -4,11 +4,14 @@ import random
 #Takes in a WishingDate object as a parameter and generates a wish
 def getWish(event_details):
     wish = "Happy "
-    wish+= event_details.event
-    wish+= " "
-    wish+= event_details.name
-    wish+= " "
-    wish+=event_details.relation
+    if(isinstance(event_details.event,str) or (not math.isnan(event_details.event))):
+        wish+= event_details.event
+        wish+= " "
+    if(isinstance(event_details.name,str) or (not math.isnan(event_details.name))):
+        wish+= event_details.name
+        wish+= " "
+    if(isinstance(event_details.relation,str) or (not math.isnan(event_details.relation))):
+        wish+= event_details.relation
     wish+=randomEmojis()
     return wish
 
