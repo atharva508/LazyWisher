@@ -5,11 +5,13 @@ class WishingDate:
     relation = None
     name  = None
     event = None
-    event_date = None
+    event_day = None
+    event_month = None
 
     def __init__(self,relation,name,event,event_day,event_month):
         self.relation = relation
         self.name = name
         self.event = event
-        self.event_date = date(2022,event_month,event_day)
+        self.event_month = event_month
+        self.event_day = event_day
     
