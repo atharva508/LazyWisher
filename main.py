@@ -1,3 +1,5 @@
+#This program combines all the other modules to check the database and send a generated wish through whatsapp
+#the program checks for events every 24 hours
 import pandas as pd
 from WishGenerator import getWish
 from CheckForWish import checkDatabase
