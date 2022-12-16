@@ -1,3 +1,4 @@
+# A class that defines a general structure for an event
 from datetime import date
 class WishingDate:
 
