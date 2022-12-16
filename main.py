@@ -9,7 +9,6 @@ import time
 
 def main():
     while(True):
-        
         wishes = checkDatabase()
         if(wishes.empty):
             print("NO WISHES FOR THE DAY")
@@ -17,7 +16,7 @@ def main():
             for row in wishes.index:
                 currWish = WishingDate(wishes['Relation'][row],wishes['Name'][row],wishes['Event'][row],wishes['Day'][row],wishes['Month'][row])
                 wish = getWish(currWish)
-                print(wish)
+                print(wish) #prints the generated wish
                 id = wishes['ID'][row]
                 send_wish(id,wish)
         time.sleep(86400)
