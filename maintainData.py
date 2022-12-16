@@ -1,7 +1,6 @@
-
+#you can use this program to add records in your csv file, however i suggest that you enter you data manually in the CSV.
 from WishingDate import WishingDate
 import csv
-from WishGenerator import getWish
 
 def add_to_Collection():
     answer = "yes"
@@ -20,3 +19,5 @@ def add_to_Collection():
         csvwriter = csv.writer(file) 
         csvwriter.writerows(data) 
         
+if __name__== "__main__":
+    add_to_Collection()
